@@ -3,567 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bailiff Advice UK | Get Free Help with Bailiff Issues</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Base Styles */
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --light: #ecf0f1;
-            --dark: #2c3e50;
-            --gray: #7f8c8d;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        
-        a {
-            text-decoration: none;
-            color: var(--secondary);
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header & Navigation */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
-        .logo span {
-            color: var(--accent);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 25px;
-        }
-        
-        nav ul li a {
-            color: var(--primary);
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--secondary);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--primary);
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            opacity: 0.9;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 5px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .cta-button:hover {
-            background-color: #c0392b;
-        }
-        
-        /* Main Content */
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 60px 0;
-            gap: 40px;
-        }
-        
-        .content-left {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .content-right {
-            flex: 1;
-            min-width: 300px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .section-title {
-            color: var(--primary);
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid var(--secondary);
-            display: inline-block;
-        }
-        
-        .info-box {
-            background-color: white;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        }
-        
-        .info-box h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .info-box h3 i {
-            margin-right: 10px;
-            color: var(--secondary);
-        }
-        
-        /* Form Styles */
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--primary);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: border 0.3s;
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--secondary);
-        }
-        
-        textarea.form-control {
-            min-height: 120px;
-            resize: vertical;
-        }
-        
-        .form-check {
-            display: flex;
-            align-items: flex-start;
-            margin-top: 10px;
-        }
-        
-        .form-check-input {
-            margin-right: 10px;
-            margin-top: 5px;
-        }
-        
-        .form-check-label {
-            font-size: 0.9rem;
-            color: var(--gray);
-        }
-        
-        .form-check-label a {
-            color: var(--secondary);
-        }
-        
-        .success-message {
-            background-color: #d4edda;
-            color: #155724;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            display: none;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary);
-            color: white;
-            padding: 50px 0 20px;
-        }
-        
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column {
-            flex: 1;
-            min-width: 250px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: #ddd;
-            transition: color 0.3s;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.4rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: white;
-                flex-direction: column;
-                padding: 20px;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            nav ul li {
-                margin: 10px 0;
-            }
-            
-            .hero {
-                padding: 60px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .content-right, .info-box {
-                padding: 20px;
-            }
-        }
-    </style>
+    <title>Bailiff Help & Advice UK | Stop Bailiff Action</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@web3forms/html@latest/dist/web3forms.js" defer></script>
+    <meta name="description" content="Free bailiff advice UK. Stop bailiff action for council tax, debts, CCJs. Get help with enforcement officers and debt solutions.">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">Bailiff<span>Advice</span>.uk</div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="mainNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">BailiffHelp<span>UK</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Stop Bailiffs & Take Control</h1>
+            <p class="hero-subtitle">Are you having trouble with a bailiff due to unpaid council tax, fines, or other debts?</p>
+            <p>We can help stop bailiff action. Bailiffs coming to your home can be nerve-racking, but you have rights and should not be bullied.</p>
+            <a href="#contact-form" class="cta-button">Get Free Advice Now</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Services Section -->
+    <section class="services">
         <div class="container">
-            <h1>Free Bailiff Advice & Debt Help</h1>
-            <p>Get expert guidance on dealing with bailiffs, enforcement agents, and debt collection. We provide free, confidential advice to help you understand your rights and options.</p>
-            <a href="#contact-form" class="cta-button">Get Free Advice Now</a>
+            <h2>What Do We Do?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Speak with Creditors</h3>
+                    <p>Our experienced case workers mediate with your creditors to stop bailiff action.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Affordable Repayment Plans</h3>
+                    <p>Help you set up manageable repayment plans or Individual Voluntary Arrangements (IVAs).</p>
+                </div>
+                <div class="service-card">
+                    <h3>Stop Bailiff Visits</h3>
+                    <p>We work to prevent further visits from bailiffs and protect your rights.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Debt Write-off Advice</h3>
+                    <p>Provide advice on writing off unaffordable unsecured debts and freezing charges.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="container main-content">
-        <div class="content-left">
-            <h2 class="section-title">How We Can Help You</h2>
-            
-            <div class="info-box">
-                <h3><i class="fas fa-balance-scale"></i> Know Your Rights</h3>
-                <p>Bailiffs have strict rules they must follow. We'll explain what bailiffs can and cannot do when they visit your home or business, and help you understand your legal protections.</p>
-            </div>
-            
-            <div class="info-box">
-                <h3><i class="fas fa-hand-paper"></i> Stop Bailiff Action</h3>
-                <p>Learn effective strategies to stop bailiffs from taking your goods, including negotiation techniques, payment arrangements, and legal procedures that can halt enforcement action.</p>
-            </div>
-            
-            <div class="info-box">
-                <h3><i class="fas fa-pound-sign"></i> Debt Solutions</h3>
-                <p>Explore various debt solutions including payment plans, debt relief orders, individual voluntary arrangements (IVAs), and bankruptcy options tailored to your situation.</p>
-            </div>
-            
-            <div class="info-box">
-                <h3><i class="fas fa-file-contract"></i> Challenge Incorrect Debts</h3>
-                <p>If you believe a debt is incorrect or the bailiff has made an error, we can guide you through the process of challenging the debt and disputing bailiff fees.</p>
+    <!-- Essential Steps -->
+    <section class="steps">
+        <div class="container">
+            <h2>Essential Steps to Take</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">🚫</div>
+                    <h3>Do NOT Let Them In</h3>
+                    <p>You are not obliged to let anyone into your home.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🛡️</div>
+                    <h3>Do NOT Be Intimidated</h3>
+                    <p>You don't have to speak to bailiffs or respond to intimidation.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">📝</div>
+                    <h3>Do NOT Sign Anything</h3>
+                    <p>Never sign documents presented by bailiffs without legal advice.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">📞</div>
+                    <h3>Contact Us Immediately</h3>
+                    <p>We can stop bailiffs in their tracks and help with debt solutions.</p>
+                </div>
             </div>
         </div>
-        
-        <div class="content-right">
-            <h2 class="section-title">Get Free Bailiff Advice</h2>
-            <p>Fill out the form below and our experts will contact you with personalized advice for your situation. All advice is completely free and confidential.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <h2>Speak to Our Team Now for Assistance</h2>
+            <p>Complete the form and our team will call you straight back to discuss your situation and available options.</p>
             
-            <!-- Success Message (hidden by default) -->
-            <div class="success-message" id="successMessage">
-                <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We'll get back to you as soon as possible.
+            <div class="form-wrapper">
+                <form id="web3form" class="contact-form">
+                    <!-- Web3Forms Configuration -->
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="subject" value="New Bailiff Help Request">
+                    <input type="hidden" name="from_name" value="Bailiff Help Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="debt-type">Type of Debt *</label>
+                        <select id="debt-type" name="debt_type" required>
+                            <option value="">Select type of debt</option>
+                            <option value="Council Tax Arrears">Council Tax Arrears</option>
+                            <option value="High Court Enforcement">High Court Enforcement</option>
+                            <option value="Penalty Charge Notice">Penalty Charge Notice</option>
+                            <option value="Utility Arrears">Utility Arrears</option>
+                            <option value="CCJ's">CCJ's</option>
+                            <option value="Notice of Enforcement">Notice of Enforcement</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Brief Description of Your Situation</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level</label>
+                        <select id="urgency" name="urgency">
+                            <option value="Normal">Normal - Need advice within 48 hours</option>
+                            <option value="Urgent">Urgent - Bailiffs have already visited</option>
+                            <option value="Very Urgent">Very Urgent - Bailiff visit scheduled</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Optional checkbox (not required) -->
+                    <div class="form-group optional-checkbox">
+                        <input type="checkbox" id="callback" name="prefer_callback">
+                        <label for="callback">Prefer callback over email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Submit Request for Free Advice</button>
+                    </div>
+                    
+                    <p class="form-note">Important: We are an independent advice service and are NOT bailiffs or enforcement agents. 
+                    Fees may apply for debt solutions and your credit rating may be affected.</p>
+                </form>
+                
+                <div class="form-info">
+                    <h3>Need Immediate Help?</h3>
+                    <p>You can also call our team directly:</p>
+                    <p class="phone-number">📞 0161 826 1292</p>
+                    <p>Lines are open Monday-Friday, 9am-6pm</p>
+                    
+                    <div class="info-box">
+                        <h4>Types of Debts We Deal With:</h4>
+                        <ul>
+                            <li>Council Tax Arrears</li>
+                            <li>High Court Enforcement</li>
+                            <li>Penalty Charge Notices</li>
+                            <li>Utility Bill Arrears</li>
+                            <li>County Court Judgments</li>
+                            <li>Notice of Enforcement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h4>Our Promise:</h4>
+                        <p>✓ Free initial advice<br>
+                        ✓ Experienced professionals<br>
+                        ✓ Confidential service<br>
+                        ✓ No obligation consultation</p>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Web3Forms Contact Form -->
-            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-                <!-- Web3Forms Access Key -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                <!-- Subject for the email -->
-                <input type="hidden" name="subject" value="New Bailiff Advice Request">
-                <!-- Redirect after successful submission -->
-                <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html">
-                <!-- Honeypot spam protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" class="form-control">
-                </div>
-                
-                <div class="form-group">
-                    <label for="debt_type">Type of Debt</label>
-                    <select id="debt_type" name="debt_type" class="form-control">
-                        <option value="">Select debt type</option>
-                        <option value="council_tax">Council Tax</option>
-                        <option value="parking_fine">Parking Fine</option>
-                        <option value="court_fine">Court Fine</option>
-                        <option value="credit_card">Credit Card</option>
-                        <option value="loan">Loan</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Your Situation *</label>
-                    <textarea id="message" name="message" class="form-control" placeholder="Please describe your situation with the bailiffs, including any deadlines or recent visits..." required></textarea>
-                </div>
-                
-                <!-- Note: No forced checkbox required for consent -->
-                <!-- If you want to add optional consent checkbox, uncomment below -->
-                <!--
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="consent" name="consent">
-                    <label class="form-check-label" for="consent">I agree to receive advice and information via email (optional)</label>
-                </div>
-                -->
-                
-                <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">
-                    <i class="fas fa-paper-plane"></i> Send Message & Get Free Advice
-                </button>
-                
-                <p style="font-size: 0.85rem; color: var(--gray); margin-top: 15px;">
-                    By submitting this form, you acknowledge that you're seeking advice and consent to being contacted about your enquiry. Your information will be handled in accordance with our <a href="privacy.html">Privacy Policy</a>.
-                </p>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Bailiff Advice UK</h3>
-                    <p>Providing free, expert advice on bailiff action and debt solutions across the United Kingdom. Our service is completely confidential and impartial.</p>
+                <div class="footer-section">
+                    <h3>BailiffHelp UK</h3>
+                    <p>Providing free bailiff advice and debt solutions across the UK.</p>
                 </div>
-                
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="debt-help.html">Debt Help Guide</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Legal</h3>
                     <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="cookies.html">Cookies Policy</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> help@bailiffadvice.example.com</li>
-                        <li><i class="fas fa-phone"></i> 0800 123 4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> London, UK</li>
-                    </ul>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: help@bailiffhelp.uk<br>
+                    Phone: 0161 826 1292</p>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Bailiff Advice UK. All rights reserved. This is a free advice service. We are not a law firm and do not provide legal representation.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BailiffHelp UK. All rights reserved.</p>
+                <p><em>May not be suitable in all circumstances. Our advice is free but fees may apply and your credit rating may be affected if you opt for a debt solution.</em></p>
             </div>
         </div>
     </footer>
 
+    <!-- Form Success Message -->
+    <div id="success-message" class="success-message" style="display: none;">
+        <div class="message-content">
+            <span class="close-btn">&times;</span>
+            <h3>Thank You!</h3>
+            <p>Your form has been submitted successfully. Our team will contact you shortly.</p>
+        </div>
+    </div>
+
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            document.getElementById('mainNav').classList.toggle('active');
-        });
-        
-        // Form Submission Handling
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('web3form');
+            const successMessage = document.getElementById('success-message');
+            const closeBtn = document.querySelector('.close-btn');
             
-            // Simple form validation
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            // In a real implementation, this would be handled by Web3Forms
-            // For demo purposes, we'll show a success message
-            document.getElementById('successMessage').style.display = 'block';
-            
-            // Scroll to success message
-            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
-            
-            // Reset form after submission (in real implementation, this happens after successful submission)
-            setTimeout(() => {
-                document.getElementById('contact-form').reset();
-            }, 3000);
-            
-            // In production, you would let Web3Forms handle the submission
-            // Uncomment the line below to enable actual form submission
-            // this.submit();
-        });
-        
-        // Close mobile menu when clicking on a link
-        const navLinks = document.querySelectorAll('#mainNav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mainNav').classList.remove('active');
+            // Initialize Web3Forms
+            Web3Forms.init({
+                access_key: "YOUR_WEB3FORMS_ACCESS_KEY",
+                onSuccess: function(msg) {
+                    // Show success message
+                    successMessage.style.display = 'flex';
+                    form.reset();
+                },
+                onError: function(msg) {
+                    alert("There was an error submitting the form. Please try again or call us directly.");
+                }
             });
+            
+            // Close success message
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    successMessage.style.display = 'none';
+                });
+            }
         });
     </script>
 </body>
