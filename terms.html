@@ -3,314 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service | Bailiff Advice UK</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Reuse the same CSS from index.html */
-        /* Add this to your external CSS file or keep inline for simplicity */
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --light: #ecf0f1;
-            --dark: #2c3e50;
-            --gray: #7f8c8d;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header & Navigation */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
-        .logo span {
-            color: var(--accent);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 25px;
-        }
-        
-        nav ul li a {
-            color: var(--primary);
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--secondary);
-        }
-        
-        /* Page Content */
-        .page-hero {
-            background-color: var(--primary);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .page-hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .content-container {
-            padding: 60px 0;
-            background-color: white;
-        }
-        
-        .content-box {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .content-box h2 {
-            color: var(--primary);
-            margin: 30px 0 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--light);
-        }
-        
-        .content-box h2:first-child {
-            margin-top: 0;
-        }
-        
-        .content-box p {
-            margin-bottom: 15px;
-        }
-        
-        .content-box ul {
-            margin: 15px 0 15px 20px;
-        }
-        
-        .content-box ul li {
-            margin-bottom: 8px;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary);
-            color: white;
-            padding: 50px 0 20px;
-        }
-        
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column {
-            flex: 1;
-            min-width: 250px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: #ddd;
-            transition: color 0.3s;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .content-box {
-                padding: 25px;
-            }
-            
-            .page-hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <title>Terms & Conditions | Bailiff Help UK</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">Bailiff<span>Advice</span>.uk</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">BailiffHelp<span>UK</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Terms & Conditions</h1>
+            <p>Last updated: February 9, 2026</p>
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
+    <!-- Main Content -->
+    <section class="page-content">
         <div class="container">
-            <h1>Terms of Service</h1>
-            <p>Last updated: June 1, 2023</p>
-        </div>
-    </section>
+            <div class="content-section">
+                <h2>1. Introduction</h2>
+                <p>Welcome to BailiffHelp UK ("we," "our," or "us"). These Terms & Conditions govern your use of our website and services. By accessing our website or using our services, you agree to these terms.</p>
 
-    <!-- Content -->
-    <section class="content-container">
-        <div class="container">
-            <div class="content-box">
-                <h2>1. Acceptance of Terms</h2>
-                <p>By accessing and using BailiffAdvice.uk ("the Website"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this service.</p>
-                
-                <h2>2. Description of Service</h2>
-                <p>BailiffAdvice.uk provides free information and guidance regarding bailiff action, debt collection, and related financial matters. Our service includes:</p>
+                <h2>2. Our Services</h2>
+                <p>BailiffHelp UK provides debt advice and assistance with bailiff action. We are an independent advice service and are NOT bailiffs or enforcement agents. Our services include:</p>
                 <ul>
-                    <li>Educational content about bailiff procedures and rights</li>
-                    <li>General guidance on dealing with debt collection</li>
-                    <li>Referrals to appropriate debt advice services</li>
-                    <li>Contact forms to request further information</li>
+                    <li>Free initial consultations and advice</li>
+                    <li>Mediation with creditors and bailiffs</li>
+                    <li>Assistance with debt solutions including Individual Voluntary Arrangements (IVAs)</li>
+                    <li>Representation in dealings with enforcement agents</li>
                 </ul>
-                <p><strong>Important:</strong> We are not a law firm and do not provide legal advice or representation. The information provided is for educational purposes only.</p>
-                
-                <h2>3. User Responsibilities</h2>
-                <p>As a user of this Website, you agree to:</p>
-                <ul>
-                    <li>Provide accurate and complete information when using our contact forms</li>
-                    <li>Use the Website only for lawful purposes</li>
-                    <li>Not attempt to disrupt or interfere with the Website's security</li>
-                    <li>Not use the Website to harass, abuse, or harm others</li>
-                </ul>
-                
-                <h2>4. Disclaimer of Liability</h2>
-                <p>The information provided on BailiffAdvice.uk is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the Website or the information, products, services, or related graphics contained on the Website for any purpose.</p>
-                <p>In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this Website.</p>
-                
-                <h2>5. Intellectual Property</h2>
-                <p>All content on this Website, including text, graphics, logos, and images, is the property of BailiffAdvice.uk or its content suppliers and is protected by copyright laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.</p>
-                
-                <h2>6. External Links</h2>
-                <p>Our Website may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorsement of the views expressed within them.</p>
-                
-                <h2>7. Modifications to Terms</h2>
-                <p>We reserve the right to modify these Terms of Service at any time. We will notify users of any changes by posting the new Terms of Service on this page and updating the "last updated" date. You are advised to review these Terms periodically for any changes.</p>
-                
-                <h2>8. Governing Law</h2>
-                <p>These Terms shall be governed and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions. Any disputes relating to these Terms will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
-                
-                <h2>9. Contact Us</h2>
-                <p>If you have any questions about these Terms of Service, please contact us at:</p>
-                <p>Email: legal@bailiffadvice.example.com<br>
-                Postal: Legal Department, Bailiff Advice UK, 123 Advice Street, London, UK</p>
+
+                <h2>3. Free Advice vs. Paid Services</h2>
+                <p>3.1 Our initial consultation and advice are provided free of charge.</p>
+                <p>3.2 If you choose to proceed with formal debt solutions that require our ongoing services, fees may apply. All fees will be clearly explained before you commit to any service.</p>
+                <p>3.3 You are under no obligation to use our paid services after receiving free advice.</p>
+
+                <h2>4. Important Information About Debt Solutions</h2>
+                <p>4.1 Debt solutions such as Individual Voluntary Arrangements (IVAs) may affect your credit rating.</p>
+                <p>4.2 Some debt solutions require you to meet specific criteria and may not be suitable for all circumstances.</p>
+                <p>4.3 We will provide clear information about the implications of any proposed debt solution before you proceed.</p>
+
+                <h2>5. Your Responsibilities</h2>
+                <p>5.1 You must provide accurate and complete information about your financial situation.</p>
+                <p>5.2 You agree to cooperate with us and provide necessary documentation in a timely manner.</p>
+                <p>5.3 You are responsible for any decisions you make based on our advice.</p>
+
+                <h2>6. Limitation of Liability</h2>
+                <p>6.1 We provide advice to the best of our ability based on the information you provide.</p>
+                <p>6.2 We cannot guarantee specific outcomes in dealing with bailiffs or creditors.</p>
+                <p>6.3 Our liability is limited to the fees paid for our services, except where prohibited by law.</p>
+
+                <h2>7. Client Complaints</h2>
+                <p>7.1 We aim to provide high-quality service at all times.</p>
+                <p>7.2 If you have a complaint about our service, please contact us at complaints@bailiffhelp.uk.</p>
+                <p>7.3 We will acknowledge complaints within 5 working days and aim to resolve them within 20 working days.</p>
+
+                <h2>8. Website Use</h2>
+                <p>8.1 The information on our website is for general guidance only and does not constitute professional advice.</p>
+                <p>8.2 We reserve the right to modify or withdraw our website at any time without notice.</p>
+                <p>8.3 You may not use our website for any unlawful purpose or in any way that could damage our reputation.</p>
+
+                <h2>9. Intellectual Property</h2>
+                <p>9.1 All content on our website, including text, graphics, and logos, is our property or licensed to us.</p>
+                <p>9.2 You may not reproduce, distribute, or modify any content without our prior written permission.</p>
+
+                <h2>10. Third-Party Links</h2>
+                <p>Our website may contain links to third-party websites. We are not responsible for the content or practices of these websites.</p>
+
+                <h2>11. Changes to Terms</h2>
+                <p>We may update these Terms & Conditions from time to time. The current version will always be available on our website.</p>
+
+                <h2>12. Governing Law</h2>
+                <p>These Terms & Conditions are governed by the laws of England and Wales. Any disputes will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+                <h2>13. Contact Information</h2>
+                <p>For questions about these Terms & Conditions, please contact us:</p>
+                <p>BailiffHelp UK<br>
+                Email: legal@bailiffhelp.uk<br>
+                Phone: 0161 826 1292</p>
+
+                <div class="info-box">
+                    <h3>Important Note</h3>
+                    <p>If you are experiencing bailiff action, please contact us immediately for advice. Do not delay seeking help because you are reviewing these terms.</p>
+                    <a href="contact.html" class="cta-button">Get Help Now</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Bailiff Advice UK</h3>
-                    <p>Providing free, expert advice on bailiff action and debt solutions across the United Kingdom.</p>
+                <div class="footer-section">
+                    <h3>BailiffHelp UK</h3>
+                    <p>Providing free bailiff advice and debt solutions across the UK.</p>
                 </div>
-                
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="debt-help.html">Debt Help Guide</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Legal</h3>
                     <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="cookies.html">Cookies Policy</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> help@bailiffadvice.example.com</li>
-                        <li><i class="fas fa-phone"></i> 0800 123 4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> London, UK</li>
-                    </ul>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: help@bailiffhelp.uk<br>
+                    Phone: 0161 826 1292</p>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Bailiff Advice UK. All rights reserved. This is a free advice service. We are not a law firm and do not provide legal representation.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BailiffHelp UK. All rights reserved.</p>
+                <p><em>May not be suitable in all circumstances. Our advice is free but fees may apply and your credit rating may be affected if you opt for a debt solution.</em></p>
             </div>
         </div>
     </footer>
